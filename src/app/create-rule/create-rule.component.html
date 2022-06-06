@@ -1,0 +1,35 @@
+<div class="col-md-6 offset-md-3">
+    <h3> Create Rule </h3>
+    <form (ngSubmit) = "onSubmit()">
+    
+        <div class="form-group">
+            <label> Rule Name</label>
+            <input type="text" class ="form-control" id = "ruleName"
+                [(ngModel)] = "rule.ruleName" name = "ruleName">
+        </div>
+      <!--    <div class="form-group">
+            <label> Ruleflow Group</label>
+            <input type="text" class ="form-control" id = "ruleflowGroup"
+                [(ngModel)] = "rule.ruleflowGroup" name = "ruleflowGroup">
+        </div>
+        <div class="form-group">
+            <label> Salience</label>
+            <input type="text" class ="form-control" id = "salience"
+                [(ngModel)] = "rule.salience" name = "salience">
+        </div> -->
+        <div class="form-group">
+            <label> Condition</label>
+            <input type="text" class ="form-control" id = "ruleCondition"
+                [(ngModel)] = "rule.ruleCondition" name = "ruleCondition">
+        </div>
+    
+        <div class="form-group">
+            <label> Action</label>
+            <input type="text" class ="form-control" id = "ruleAction"
+                [(ngModel)] = "rule.ruleAction" name = "ruleAction">
+        </div>
+    
+        <button class = "btn btn-success" type ="submit">Submit</button>
+    
+    </form>
+    </div> 

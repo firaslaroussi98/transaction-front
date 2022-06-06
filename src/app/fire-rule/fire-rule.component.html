@@ -1,0 +1,15 @@
+
+
+  <form (ngSubmit) = "firerule()">
+    
+    <div class="form-group">
+        <label> Montant</label>
+        <input type="text" class ="form-control" id = "ruleName"
+            [(ngModel)] = "montant" name = "ruleName">
+    </div>
+
+    <button class = "btn btn-success" type ="submit">Fire Rule</button>
+
+</form>
+
+<p *ngIf="resultDone">The Amount is {{result.montant}} : {{result.commition}}% commission</p>

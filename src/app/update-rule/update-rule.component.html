@@ -1,0 +1,26 @@
+<div class="col-md-6 offset-md-3">
+    <h3> Update Rule </h3>
+    <form (ngSubmit) = "onSubmit()">
+    
+        <div class="form-group">
+            <label> Rule Name</label>
+            <input type="text" class ="form-control" id = "ruleName"
+                [(ngModel)] = "rule.ruleName" name = "ruleName">
+        </div>
+    
+        <div class="form-group">
+            <label> Condition</label>
+            <input type="text" class ="form-control" id = "ruleCondition"
+                [(ngModel)] = "rule.ruleCondition" name = "ruleCondition">
+        </div>
+    
+        <div class="form-group">
+            <label> Action</label>
+            <input type="text" class ="form-control" id = "ruleAction"
+                [(ngModel)] = "rule.ruleAction" name = "ruleAction">
+        </div>
+    
+        <button class = "btn btn-success" type ="submit">Submit</button>
+    
+    </form>
+    </div> 
